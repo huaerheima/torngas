@@ -105,7 +105,7 @@ WHITELIST = False
 # )
 
 # 简化tornado日志功能配置,上一版本过于囧长
-LOGGING_DIR = 'logs/'
+LOGGING_DIR = os.path.join(PROJECT_PATH, 'logs/')
 LOGGING = (
     {
         'name': 'tornado',
